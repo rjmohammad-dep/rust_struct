@@ -1,13 +1,17 @@
+struct Rectangle {
+    width: u32,
+    height: u32
+}
+
 fn main() {
-    let rect1 = (30, 50);
+    let rect1 = Rectangle {width: 30, height: 50};
 
     println!(
         " The Area of rectangle is {} square pixels",
-        area(rect1)
+        area(&rect1)
     )
 }
 
-fn area(dimen: (u32, u32)) -> u32 {
-    let (w, h) = dimen;
-    w * h
+fn area(rect: &Rectangle) -> u32 {
+    rect.width * rect.height
 }
