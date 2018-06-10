@@ -1,0 +1,6 @@
+[package]
+name = "struct_project"
+version = "0.1.0"
+authors = ["RJ Mohammad <rana.mohammad@weightwatchers.com>"]
+
+[dependencies]
